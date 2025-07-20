@@ -210,17 +210,18 @@ function Main() {
             <ul className="mobile-nav-contact list-unstyled">
               <li>
                 <i className="fa-solid fa-phone" />
-                <a href="tel:+8898006802">+ 88 ( 9800 ) 6802</a>
+                <a href="tel:00000000">00000000</a>
               </li>
 
               <li>
                 <i className="fa-solid fa-envelope" />
-                <a href="mailto:needhelp@company.com">needhelp@company.com</a>
+                <a href="mailto: contact@globalhousinginitiative.org "> contact@globalhousinginitiative.org 
+</a>
               </li>
 
               <li>
                 <i className="fa-solid fa-map-marker-alt" />
-                88 Broklyn Golden Road Street <br /> New York. USA
+                Sacramento, California
               </li>
             </ul>
 
