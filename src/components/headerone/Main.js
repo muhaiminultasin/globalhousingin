@@ -215,7 +215,7 @@ function Main() {
 
               <li>
                 <i className="fa-solid fa-envelope" />
-                <a href="mailto: contact@globalhousinginitiative.org "> contact@globalhousinginitiative.org 
+                <a href="mailto: contact@globalhousinginitiative.org "> Email Us
 </a>
               </li>
 
