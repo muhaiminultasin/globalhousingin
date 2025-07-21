@@ -245,36 +245,7 @@ function First() {
                     
                   </div> */}
 
-              <div className="accordian-box">
-                {Drop.map((items, index) => (
-                  <div
-                    className={`accordian-box-item ${
-                      Faq !== index && "active"
-                    }`}
-                    key={items}
-                  >
-                    <div className="accordian-title">
-                      <h5>{items.Que}</h5>
-                      <i
-                        className="fa-solid fa-angle-right"
-                        onClick={() => {
-                          setFaq(index);
-                        }}
-                      />
-                    </div>
-
-                    {Faq === index && (
-                      <div
-                        className="accordian-content"
-                        key={items}
-                        style={{ display: "block" }}
-                      >
-                        <p> {items.Answer} </p>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
+              
             </div>
           </div>
         </div>

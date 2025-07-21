@@ -22,7 +22,6 @@ function Main() {
             subtitledown="Our Technology"
            />
             <First/>
-            <Mayor/>
             <Client/>
         </div>
     </>

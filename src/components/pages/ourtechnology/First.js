@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Gallery01 from "../../../assets/image/impact.jpg";
+import Shapes01 from "../../../assets/image/shapes/shape-1.png";
 
 function First() {
   return (
@@ -21,9 +22,7 @@ function First() {
                     <Link to="#">Public-Private Collaboration Engine</Link>
                   </h4>
                   <p>
-                    Aligning technology with civic needs
-Our development tools are designed to integrate seamlessly with city planning and public infrastructure. GHI’s PolyFRAME system enables municipalities and nonprofits to adopt factory-built resilience at scale, simplifying zoning, permitting, and project execution.
-
+                    <i>Aligning technology with civic needs</i>
                   </p>
                 </div>
               </div>
@@ -42,9 +41,7 @@ Our development tools are designed to integrate seamlessly with city planning an
                     <Link to="#">Training-Integrated Manufacturing</Link>
                   </h4>
                   <p>
-                    Bridging workforce development with advanced fabrication
-Our facilities double as training centers, where workers learn to fabricate and assemble PolyFRAME components using CNC press brakes, robotic cutting, and pre-engineered assembly logic. Each step creates jobs and builds community capacity.
-
+                    <i>Bridging workforce development with advanced fabrication</i>
                   </p>
                 </div>
               </div>
@@ -60,13 +57,11 @@ Our facilities double as training centers, where workers learn to fabricate and 
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">Disaster-Resilient Structural System
-</Link>
+                    <Link to="#">Disaster-Resilient Structural System</Link>
                   </h4>
                   <p>
-                    Stronger buildings through steel–concrete composite innovation
-PolyFRAME columns and beams are built using a multi-layered steel core embedded in reinforced concrete. This patent-pending system resists fire, seismic, flood, and high-wind hazards, offering long-term safety for communities facing climate extremes.
-
+                    <i>Stronger buildings through steel–concrete composite
+                    innovation</i>
                   </p>
                 </div>
               </div>
@@ -82,13 +77,10 @@ PolyFRAME columns and beams are built using a multi-layered steel core embedded 
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">Smart Modular Design & Deployment
-</Link>
+                    <Link to="#">Smart Modular Design & Deployment</Link>
                   </h4>
                   <p>
-                    Precision-built systems for any location
-From 4-story towers to urban infill sites, our modules are engineered to fit diverse land use constraints. By combining octagonal, square, and hexagonal units, we eliminate the need for custom structural engineering, making scalable design accessible.
-
+                    <i>Precision-built systems for any location</i>
                   </p>
                 </div>
               </div>
@@ -104,13 +96,10 @@ From 4-story towers to urban infill sites, our modules are engineered to fit div
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#"> Integrated Urban Village Model
-</Link>
+                    <Link to="#"> Integrated Urban Village Model</Link>
                   </h4>
                   <p>
-                  Technology meets culture, care, and inclusion.
-Each Urban Village combines PolyFRAME’s structural core with inclusive site design: shared green space, community services, and wellness-focused infrastructure. Our technology enables not just buildings, but whole ecosystems of equity and opportunity.
-
+                    <i>Technology meets culture, care, and inclusion</i>
                   </p>
                 </div>
               </div>
@@ -128,13 +117,10 @@ Each Urban Village combines PolyFRAME’s structural core with inclusive site de
                   <h4>
                     <Link to="service-details">
                       Embedded Safety & Monitoring Systems
-
                     </Link>
                   </h4>
                   <p>
-                    Innovations that protect from within
-Our structural columns include built-in misting for wildfire defense, water drainage for flood control, and seismic isolation at the column base. GHI’s systems are more than structural—they’re proactive safety tools for the future of housing.
-
+                    <i>Innovations that protect from within</i>
                   </p>
                 </div>
               </div>
@@ -156,32 +142,179 @@ Our structural columns include built-in misting for wildfire defense, water drai
 
             <div className="col-lg-6">
               <div className="section-title-box">
-                <div className="section-tagline">Why We're Different</div>
+                <div className="section-tagline"></div>
 
                 <h2 className="section-title text-white">
-                  Manufacturing for Scalable Impact
+                  Public-Private Collaboration Engine
                 </h2>
+                <i>Aligning technology with civic needs</i>
                 <div className="section-text">
+                  
+                  <br></br>
                   <p>
-                    At the Global Housing Initiative and NeoPOLYGON Technology,
-                    we are establishing our in-house steel fabrication system to
-                    produce all core components of the PolyFRAME structural
-                    system. This includes beams, columns, and connection members
-                    made from 8-gauge steel, utilizing advanced CNC press brakes
-                    and precision cutting technology.
-                  </p>
-                  <p>
-                    Most importantly, the system is fully scalable and can be
-                    installed locally, allowing us to launch projects within
-                    California and across the globe with complete control over
-                    quality, cost, and speed.
-                  </p>
-                  <p>
-                    This capability is central to our vision: delivering
-                    resilient, affordable housing through a globally replicable
-                    model that starts with smart, localized manufacturing.
+                   Our development tools are designed to integrate seamlessly with city planning and public infrastructure. GHI’s PolyFRAME system enables municipalities and nonprofits to adopt factory-built resilience at scale, simplifying zoning, permitting, and project execution.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mayor-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="mayor-box">
+                <div className="section-title-box">
+                  <div className="section-tagline"></div>
+                  <h1 className="">
+                    Training-Integrated Manufacturing
+                  </h1>
+                  <i>Bridging workforce development with advanced fabrication</i>
+                  <p>
+
+                     <br></br>
+                    Our facilities double as training centers, where workers learn to fabricate and assemble PolyFRAME components using CNC press brakes, robotic cutting, and pre-engineered assembly logic. Each step creates jobs and builds community capacity.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="mayor-img">
+                <img src={Shapes01} className="floated-image-one" alt="img-7" />
+                <img src={Gallery01} alt="img-8" />
+                <div className="mayor-name">Mr. Kevin Martin</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="service-section">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-5">
+              <div className="about-image">
+                <div className="about-image-inner img-one">
+                  <img src={Gallery01} className="img-fluid" alt="img-2" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="section-title-box">
+                <div className="section-tagline"></div>
+
+                <h2 className="section-title text-white">
+                  Disaster-Resilient Structural System
+                </h2>
+                <i>Stronger buildings through steel–concrete composite innovation</i>
+                <div className="section-text">
+                  
+                  <br></br>
+                  <p>
+                   Our development tools are designed to integrate seamlessly with city planning and public infrastructure. GHI’s PolyFRAME system enables municipalities and nonprofits to adopt factory-built resilience at scale, simplifying zoning, permitting, and project execution.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mayor-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="mayor-box">
+                <div className="section-title-box">
+                  <div className="section-tagline"></div>
+                  <h1 className="">
+                    Smart Modular Design & Deployment
+                  </h1>
+                  <i>Precision-built systems for any location</i>
+                  <p>
+
+                     <br></br>
+                    From 4-story towers to urban infill sites, our modules are engineered to fit diverse land use constraints. By combining octagonal, square, and hexagonal units, we eliminate the need for custom structural engineering, making scalable design accessible.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="mayor-img">
+                <img src={Shapes01} className="floated-image-one" alt="img-7" />
+                <img src={Gallery01} alt="img-8" />
+                <div className="mayor-name">Mr. Kevin Martin</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="service-section">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-5">
+              <div className="about-image">
+                <div className="about-image-inner img-one">
+                  <img src={Gallery01} className="img-fluid" alt="img-2" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="section-title-box">
+                <div className="section-tagline"></div>
+
+                <h2 className="section-title text-white">
+                  Integrated Urban Village Model
+                </h2>
+                <i>Technology meets culture, care, and inclusion.</i>
+                <div className="section-text">
+                  
+                  <br></br>
+                  <p>
+                   Each Urban Village combines PolyFRAME’s structural core with inclusive site design: shared green space, community services, and wellness-focused infrastructure. Our technology enables not just buildings, but whole ecosystems of equity and opportunity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mayor-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+              <div className="mayor-box">
+                <div className="section-title-box">
+                  <div className="section-tagline"></div>
+                  <h1 className="">
+                   Embedded Safety & Monitoring Systems
+                  </h1>
+                  <i>Innovations that protect from within</i>
+                  <p>
+
+                     <br></br>
+                    Our structural columns include built-in misting for wildfire defense, water drainage for flood control, and seismic isolation at the column base. GHI’s systems are more than structural—they’re proactive safety tools for the future of housing.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="mayor-img">
+                <img src={Shapes01} className="floated-image-one" alt="img-7" />
+                <img src={Gallery01} alt="img-8" />
+                <div className="mayor-name">Mr. Kevin Martin</div>
               </div>
             </div>
           </div>

@@ -21,8 +21,9 @@ function First() {
                     Community & Local Partnerships
                   </h4>
                   <p>
-                    Working hand-in-hand with cities and public agencies GHI
-                    collaborates with local governments and mission-driven
+                    <i>Working hand-in-hand with cities and public agencies.</i>
+                     <br></br>
+                    GHI collaborates with local governments and mission-driven
                     organizations to accelerate housing development. Through
                     planning alignment and public-private partnerships, we help
                     communities develop scalable, inclusive, and affordable
@@ -46,7 +47,9 @@ function First() {
                     Workforce Development & Jobs
                   </h4>
                   <p>
-                    Empowering people through hands-on training Through programs
+                    <i>Empowering people through hands-on training.</i>
+                     <br></br>
+                     Through programs
                     like the Rebuilding Lives Initiative, GHI creates pathways
                     to employment by training individuals in modern construction
                     methods and sustainable building practices. Our projects
@@ -70,6 +73,8 @@ function First() {
                   Innovation in Housing & Industry
                   </h4>
                   <p>
+                    <i>Disrupting conventional housing through breakthrough design.</i>
+                     <br></br>
                     Disrupting conventional housing through breakthrough design
                     We develop and deploy the PolyFRAME steel–concrete composite
                     system, engineered to withstand earthquakes, wildfires, and
@@ -94,7 +99,9 @@ function First() {
                     Infrastructure & Housing Access
                   </h4>
                   <p>
-                    Innovative design meets community connectivity. PolyFRAME
+                    <i>Innovative design meets community connectivity.</i>
+                     <br></br>
+                     PolyFRAME
                     towers are built with purpose—designed for high-density
                     urban zones and walkable communities. GHI’s integrated
                     housing systems enhance access to transportation, schools,
@@ -118,7 +125,9 @@ function First() {
                     Cultural Integrity & Community Life
                   </h4>
                   <p>
-                    Designing with humanity at the core GHI’s Urban Village
+                     <i>Designing with humanity at the core.</i>
+                     <br></br>
+                     GHI’s Urban Village
                     model honors cultural values and community identity through
                     inclusive spaces. We incorporate shared gardens, learning
                     areas, and wellness design into each project, fostering a
@@ -143,7 +152,9 @@ function First() {
                     
                   </h4>
                   <p>
-                    Protecting lives through resilient design Housing is a
+                    <i>Protecting lives through resilient design.</i>
+                     <br></br>
+                     Housing is a
                     matter of justice, and safety is non-negotiable. Our
                     buildings are designed with embedded fire prevention
                     systems, seismic isolation, and flood mitigation. GHI is
