@@ -1,26 +1,40 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef } from "react";
 import Gallery01 from "../../../assets/image/impact.jpg";
 import Shapes01 from "../../../assets/image/shapes/shape-1.png";
 
 function First() {
+  // Create refs for each section
+  const ppceRef = useRef(null);
+  const timRef = useRef(null);
+  const carRef = useRef(null);
+  const cisRef = useRef(null);
+  const urvRef = useRef(null);
+  const rlpRef = useRef(null);
+
+  // Smooth scroll function
+  const scrollToSection = (ref) => {
+    if (ref.current) {
+      ref.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
+      {/* BOXES */}
       <section className="service-one-section">
         <div className="container">
           <div className="row row-gutter-30">
             <div className="col-lg-6 col-xl-4">
-              <div className="service-one-card">
+              <div
+                className="service-one-card"
+                onClick={() => scrollToSection(ppceRef)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="service-one-icon">
-                  <Link to="#">
-                    <i className="flaticon-education" />
-                  </Link>
+                  <i className="flaticon-education" />
                 </div>
-
                 <div className="service-one-card-content">
-                  <h4>
-                    <Link to="#">Public-Private Collaboration Engine</Link>
-                  </h4>
+                  <h4>Public-Private Collaboration Engine</h4>
                   <p>
                     <i>Aligning technology with civic needs</i>
                   </p>
@@ -29,98 +43,90 @@ function First() {
             </div>
 
             <div className="col-lg-6 col-xl-4">
-              <div className="service-one-card">
+              <div
+                className="service-one-card"
+                onClick={() => scrollToSection(timRef)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="service-one-icon">
-                  <Link to="#">
-                    <i className="flaticon-public-transport-1" />
-                  </Link>
+                  <i className="flaticon-charity" />
                 </div>
-
                 <div className="service-one-card-content">
-                  <h4>
-                    <Link to="#">Training-Integrated Manufacturing</Link>
-                  </h4>
+                  <h4>Tech-Integrated Manufacturing</h4>
                   <p>
-                    <i>Bridging workforce development with advanced fabrication</i>
+                    <i>Factory-built for efficiency and resilience</i>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-6 col-xl-4">
-              <div className="service-one-card">
+              <div
+                className="service-one-card"
+                onClick={() => scrollToSection(carRef)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="service-one-icon">
-                  <Link to="#">
-                    <i className="flaticon-agriculture" />
-                  </Link>
+                  <i className="flaticon-donation" />
                 </div>
-
                 <div className="service-one-card-content">
-                  <h4>
-                    <Link to="#">Disaster-Resilient Structural System</Link>
-                  </h4>
+                  <h4>Culture, Community & Resilience</h4>
                   <p>
-                    <i>Stronger buildings through steel–concrete composite
-                    innovation</i>
+                    <i>Rebuilding lives, one home at a time</i>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-6 col-xl-4">
-              <div className="service-one-card">
+              <div
+                className="service-one-card"
+                onClick={() => scrollToSection(cisRef)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="service-one-icon">
-                  <Link to="#">
-                    <i className="flaticon-factory" />
-                  </Link>
+                  <i className="flaticon-loan" />
                 </div>
-
                 <div className="service-one-card-content">
-                  <h4>
-                    <Link to="#">Smart Modular Design & Deployment</Link>
-                  </h4>
+                  <h4>Community Investment System</h4>
                   <p>
-                    <i>Precision-built systems for any location</i>
+                    <i>Affordable financing, circular value</i>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-6 col-xl-4">
-              <div className="service-one-card">
+              <div
+                className="service-one-card"
+                onClick={() => scrollToSection(urvRef)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="service-one-icon">
-                  <Link to="#">
-                    <i className="flaticon-businessman" />
-                  </Link>
+                  <i className="flaticon-home" />
                 </div>
-
                 <div className="service-one-card-content">
-                  <h4>
-                    <Link to="#"> Integrated Urban Village Model</Link>
-                  </h4>
+                  <h4>Urban Resilience Villages</h4>
                   <p>
-                    <i>Technology meets culture, care, and inclusion</i>
+                    <i>Permanent housing as a human right</i>
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="col-lg-6 col-xl-4">
-              <div className="service-one-card">
+              <div
+                className="service-one-card"
+                onClick={() => scrollToSection(rlpRef)}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="service-one-icon">
-                  <Link to="#">
-                    <i className="flaticon-clinic" />
-                  </Link>
+                  <i className="flaticon-care" />
                 </div>
-
                 <div className="service-one-card-content">
-                  <h4>
-                    <Link to="service-details">
-                      Embedded Safety & Monitoring Systems
-                    </Link>
-                  </h4>
+                  <h4>Rebuilding Lives Program</h4>
                   <p>
-                    <i>Innovations that protect from within</i>
+                    <i>Empowering through shelter and support</i>
                   </p>
                 </div>
               </div>
@@ -129,193 +135,106 @@ function First() {
         </div>
       </section>
 
-      <section className="service-section">
+      {/* SECTIONS */}
+      <section ref={ppceRef} className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
               <div className="about-image">
-                <div className="about-image-inner img-one">
-                  <img src={Gallery01} className="img-fluid" alt="img-2" />
-                </div>
+                <img src={Gallery01} className="img-fluid" alt="Public-Private" />
               </div>
             </div>
-
             <div className="col-lg-6">
-              <div className="section-title-box">
-                <div className="section-tagline"></div>
-
-                <h2 className="section-title text-white">
-                  Public-Private Collaboration Engine
-                </h2>
-                <i>Aligning technology with civic needs</i>
-                <div className="section-text">
-                  
-                  <br></br>
-                  <p>
-                   Our development tools are designed to integrate seamlessly with city planning and public infrastructure. GHI’s PolyFRAME system enables municipalities and nonprofits to adopt factory-built resilience at scale, simplifying zoning, permitting, and project execution.
-                  </p>
-                </div>
-              </div>
+              <h2 className="section-title text-white">Public-Private Collaboration Engine</h2>
+              <i>Aligning technology with civic needs</i>
+              <p>
+                Our development tools are designed to integrate seamlessly with city planning and public infrastructure...
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mayor-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="mayor-box">
-                <div className="section-title-box">
-                  <div className="section-tagline"></div>
-                  <h1 className="">
-                    Training-Integrated Manufacturing
-                  </h1>
-                  <i>Bridging workforce development with advanced fabrication</i>
-                  <p>
-
-                     <br></br>
-                    Our facilities double as training centers, where workers learn to fabricate and assemble PolyFRAME components using CNC press brakes, robotic cutting, and pre-engineered assembly logic. Each step creates jobs and builds community capacity.
-                  </p>
-                </div>
-                
-              </div>
-            </div>
-
-            <div className="col-lg-6">
-              <div className="mayor-img">
-                <img src={Shapes01} className="floated-image-one" alt="img-7" />
-                <img src={Gallery01} alt="img-8" />
-                <div className="mayor-name">Mr. Kevin Martin</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="service-section">
+      <section ref={timRef} className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
-              <div className="about-image">
-                <div className="about-image-inner img-one">
-                  <img src={Gallery01} className="img-fluid" alt="img-2" />
-                </div>
-              </div>
+              <img src={Gallery01} className="img-fluid" alt="Tech-Integrated" />
             </div>
-
             <div className="col-lg-6">
-              <div className="section-title-box">
-                <div className="section-tagline"></div>
-
-                <h2 className="section-title text-white">
-                  Disaster-Resilient Structural System
-                </h2>
-                <i>Stronger buildings through steel–concrete composite innovation</i>
-                <div className="section-text">
-                  
-                  <br></br>
-                  <p>
-                   Our development tools are designed to integrate seamlessly with city planning and public infrastructure. GHI’s PolyFRAME system enables municipalities and nonprofits to adopt factory-built resilience at scale, simplifying zoning, permitting, and project execution.
-                  </p>
-                </div>
-              </div>
+              <h2 className="section-title text-white">Tech-Integrated Manufacturing</h2>
+              <i>Factory-built for efficiency and resilience</i>
+              <p>
+                Our PolyFRAME system leverages automation and modular design to reduce costs...
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mayor-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="mayor-box">
-                <div className="section-title-box">
-                  <div className="section-tagline"></div>
-                  <h1 className="">
-                    Smart Modular Design & Deployment
-                  </h1>
-                  <i>Precision-built systems for any location</i>
-                  <p>
-
-                     <br></br>
-                    From 4-story towers to urban infill sites, our modules are engineered to fit diverse land use constraints. By combining octagonal, square, and hexagonal units, we eliminate the need for custom structural engineering, making scalable design accessible.
-                  </p>
-                </div>
-                
-              </div>
-            </div>
-
-            <div className="col-lg-6">
-              <div className="mayor-img">
-                <img src={Shapes01} className="floated-image-one" alt="img-7" />
-                <img src={Gallery01} alt="img-8" />
-                <div className="mayor-name">Mr. Kevin Martin</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="service-section">
+      <section ref={carRef} className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
-              <div className="about-image">
-                <div className="about-image-inner img-one">
-                  <img src={Gallery01} className="img-fluid" alt="img-2" />
-                </div>
-              </div>
+              <img src={Gallery01} className="img-fluid" alt="Culture and Resilience" />
             </div>
-
             <div className="col-lg-6">
-              <div className="section-title-box">
-                <div className="section-tagline"></div>
-
-                <h2 className="section-title text-white">
-                  Integrated Urban Village Model
-                </h2>
-                <i>Technology meets culture, care, and inclusion.</i>
-                <div className="section-text">
-                  
-                  <br></br>
-                  <p>
-                   Each Urban Village combines PolyFRAME’s structural core with inclusive site design: shared green space, community services, and wellness-focused infrastructure. Our technology enables not just buildings, but whole ecosystems of equity and opportunity.
-                  </p>
-                </div>
-              </div>
+              <h2 className="section-title text-white">Culture, Community & Resilience</h2>
+              <i>Rebuilding lives, one home at a time</i>
+              <p>
+                We believe culture and community are the foundation of recovery...
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="mayor-section">
+      <section ref={cisRef} className="service-section">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="mayor-box">
-                <div className="section-title-box">
-                  <div className="section-tagline"></div>
-                  <h1 className="">
-                   Embedded Safety & Monitoring Systems
-                  </h1>
-                  <i>Innovations that protect from within</i>
-                  <p>
-
-                     <br></br>
-                    Our structural columns include built-in misting for wildfire defense, water drainage for flood control, and seismic isolation at the column base. GHI’s systems are more than structural—they’re proactive safety tools for the future of housing.
-                  </p>
-                </div>
-                
-              </div>
+          <div className="row justify-content-between">
+            <div className="col-lg-5">
+              <img src={Gallery01} className="img-fluid" alt="Community Investment" />
             </div>
-
             <div className="col-lg-6">
-              <div className="mayor-img">
-                <img src={Shapes01} className="floated-image-one" alt="img-7" />
-                <img src={Gallery01} alt="img-8" />
-                <div className="mayor-name">Mr. Kevin Martin</div>
-              </div>
+              <h2 className="section-title text-white">Community Investment System</h2>
+              <i>Affordable financing, circular value</i>
+              <p>
+                GHI’s financing system allows for zero-interest lending, promoting inclusive ownership...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section ref={urvRef} className="service-section">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-5">
+              <img src={Gallery01} className="img-fluid" alt="Urban Villages" />
+            </div>
+            <div className="col-lg-6">
+              <h2 className="section-title text-white">Urban Resilience Villages</h2>
+              <i>Permanent housing as a human right</i>
+              <p>
+                URVs are permanent, affordable communities built with trauma-informed design and green technology...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section ref={rlpRef} className="service-section">
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-5">
+              <img src={Gallery01} className="img-fluid" alt="Rebuilding Lives" />
+            </div>
+            <div className="col-lg-6">
+              <h2 className="section-title text-white">Rebuilding Lives Program</h2>
+              <i>Empowering through shelter and support</i>
+              <p>
+                This program combines housing with job training, peer support, and wraparound services for sustained recovery...
+              </p>
             </div>
           </div>
         </div>

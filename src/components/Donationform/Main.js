@@ -138,6 +138,7 @@ const Donationform = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 order-lg-2 order-1">
+            
             <div
               className="donorbox-embed-wrapper"
               style={{
@@ -184,17 +185,19 @@ const Donationform = () => {
                 <li>Expand our outreach to new communities in crisis</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div style={{ marginTop: "60px", textAlign: "center", padding: "20px" }}>
+            <div style={{  paddingTop: "20px" }}>
         <h2>Make a Difference Today</h2>
         <p>
           Please donate now to join a global movement transforming how we build,
           live, and care for one another.
         </p>
+        <p style={{textTransform:"uppercase", fontWeight:"bold" , color:"#2DCD7C"}}>Donate Now</p>
       </div>
+          </div>
+        </div>
+      </div>
+
+      
     </section>
   );
 };
