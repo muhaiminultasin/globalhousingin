@@ -7,7 +7,7 @@ import First from './First'
 function Main() {
 
   useEffect(() => {
-    document.getElementById("title").innerHTML="Departments-Deatils || TownGov";
+    document.getElementById("title").innerHTML="Innovation & Industry || TownGov";
   }, [])
 
 
@@ -18,8 +18,8 @@ function Main() {
         <div className="page-wrapper">
         <Bredcom 
             subtitle="Home"
-            title="departments details"
-            subtitledown="Departments Details"
+            title="innovation"
+            subtitledown="Innovation & Industry"
            />
             <First/>
         </div>

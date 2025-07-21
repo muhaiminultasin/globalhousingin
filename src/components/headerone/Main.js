@@ -204,6 +204,9 @@ function Main() {
                 <li>
                   <Link to="/faq">FAQ</Link>
                 </li>
+                <li>
+                  <Link to="/donate">Donate</Link>
+                </li>
               </ul>
             </div>
 

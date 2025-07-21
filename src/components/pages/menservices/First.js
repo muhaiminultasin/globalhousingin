@@ -11,14 +11,14 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <Link to="#">
+                  <Link>
                     <i className="flaticon-education" />
                   </Link>
                 </div>
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">Community & Local Partnerships</Link>
+                    Community & Local Partnerships
                   </h4>
                   <p>
                     Working hand-in-hand with cities and public agencies GHI
@@ -36,14 +36,14 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <Link to="#">
+                  <Link to=" ">
                     <i className="flaticon-public-transport-1" />
                   </Link>
                 </div>
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">Workforce Development & Jobs</Link>
+                    Workforce Development & Jobs
                   </h4>
                   <p>
                     Empowering people through hands-on training Through programs
@@ -60,14 +60,14 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <Link to="#">
+                  <Link to=" ">
                     <i className="flaticon-agriculture" />
                   </Link>
                 </div>
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">Innovation in Housing & Industry</Link>
+                  Innovation in Housing & Industry
                   </h4>
                   <p>
                     Disrupting conventional housing through breakthrough design
@@ -84,14 +84,14 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <Link to="#">
+                  <Link to="">
                     <i className="flaticon-factory" />
                   </Link>
                 </div>
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">Infrastructure & Housing Access</Link>
+                    Infrastructure & Housing Access
                   </h4>
                   <p>
                     Innovative design meets community connectivity. PolyFRAME
@@ -108,14 +108,14 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <Link to="#">
+                  <Link to="">
                     <i className="flaticon-businessman" />
                   </Link>
                 </div>
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="#">. Cultural Integrity & Community Life</Link>
+                    Cultural Integrity & Community Life
                   </h4>
                   <p>
                     Designing with humanity at the core GHI’s Urban Village
@@ -131,16 +131,16 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <Link to="#">
+                  <Link to="">
                     <i className="flaticon-clinic" />
                   </Link>
                 </div>
 
                 <div className="service-one-card-content">
                   <h4>
-                    <Link to="service-details">
+                    
                       Resilience, Safety & Justice
-                    </Link>
+                    
                   </h4>
                   <p>
                     Protecting lives through resilient design Housing is a

@@ -34,38 +34,38 @@ function First() {
                 <div className="sidebar-widget-list-inner">
                   <ul>
                     <li>
-                      <Link to="#">
-                        Business &amp; Industry
+                      <Link to="/community-partners">
+                        Your Community & Local Partners
                         <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        Policing and Crime
+                      <Link to="/workforce-development">
+                        Jobs & Workforce Development
                         <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        Agriculture and Food
+                      <Link to="/innovation">
+                        Innovation & Industry
                         <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        Housing and Land
+                      <Link to="/infrastructure">
+                        Infrastructure & Housing Access
                         <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        Art and Culture
+                      <Link to="/culture-community">
+                        Community & Resilience
                         <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </li>
                     <li>
-                      <Link to="#">
-                        Roads &amp; Transport
+                      <Link to="/safety-law">
+                        Justice, Safety Law
                         <i className="fa-solid fa-arrow-right-long" />
                       </Link>
                     </li>
@@ -81,10 +81,7 @@ function First() {
                     <h3>
                       <Link to="/contact">Get Any Help?</Link>
                     </h3>
-                    <p>
-                      There are many variations of passages of lorem ipsum is
-                      simply free text available in the marke.
-                    </p>
+                    <p>We’re ready to help — reach out anytime!</p>
                   </div>
                 </div>
 
@@ -95,10 +92,10 @@ function First() {
 
                   <div className="sidebar-widget-box-content">
                     <h3>
-                      Company briefing update of the <br /> 2022 year
+                      Learn more about our Mission, Vision, and the Global Housing Initiative (GHI).
                     </h3>
                     <Link to="/departmentdetails" className="btn btn-primary">
-                      Download
+                      About Us
                     </Link>
                   </div>
                 </div>

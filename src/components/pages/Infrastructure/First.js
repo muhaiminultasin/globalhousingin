@@ -1,139 +1,130 @@
-import React,{useState} from 'react'
-import { Link } from 'react-router-dom';
-import Department01 from '../../../assets/image/department/department-1.jpg'
-import Department02 from '../../../assets/image/department/department-2.jpg'
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Department01 from "../../../assets/image/department/department-1.jpg";
+import Department02 from "../../../assets/image/department/department-2.jpg";
 
 function First() {
-
   const [Faq, setFaq] = useState(0);
 
   const Drop = [
     {
-        Que: "What material are used for house building?",
-        Answer: "Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque amet sapien semper tempus."
+      Que: "What material are used for house building?",
+      Answer:
+        "Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque amet sapien semper tempus.",
     },
     {
-        Que: "What are the easiest way to get qoute?",
-        Answer: " Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque amet sapien semper tempus."
+      Que: "What are the easiest way to get qoute?",
+      Answer:
+        " Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque amet sapien semper tempus.",
     },
     {
-        Que: "How much time will I save on a renovation?",
-        Answer: " Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque amet sapien semper tempus. "
-    }
-]
+      Que: "How much time will I save on a renovation?",
+      Answer:
+        " Sed rhoncus facilisis purus, at accumsan purus sagittis vitae. Nullam acelit at eros imperdiet pulvinar velut nisl. Pellentesque sit placerat neque amet sapien semper tempus. ",
+    },
+  ];
 
   return (
     <>
-        <section className="department-details-section">
-            <div className="container">
-              <div className="row">
-                
-                <div className="col-12 col-lg-4 col-xl-4">
-                  <div className="sidebar">
-                    <div className="sidebar-widget-list-inner">
-                      <ul>
-                        <li>
-                          <Link to="#">
-                            Business &amp; Industry
-                            <i className="fa-solid fa-arrow-right-long" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Policing and Crime
-                            <i className="fa-solid fa-arrow-right-long" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Agriculture and Food
-                            <i className="fa-solid fa-arrow-right-long" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Housing and Land
-                            <i className="fa-solid fa-arrow-right-long" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Art and Culture
-                            <i className="fa-solid fa-arrow-right-long" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Roads &amp; Transport
-                            <i className="fa-solid fa-arrow-right-long" />
-                          </Link>
-                        </li>
-                      </ul>
-                      
-                    </div>
-                    
-                    <div className="sidebar-widget sidebar-widget-card">
-                      <div className="sidebar-widget-card-icon">
-                        <i className="flaticon-question" />
-                      </div>
-                      
-                      <div className="sidebar-widget-card-content">
-                        <h3>
-                          <Link to="/contact">Get Any Help?</Link>
-                        </h3>
-                        <p>
-                          There are many variations of passages of lorem ipsum is simply
-                          free text available in the marke.
-                        </p>
-                      </div>
-                      
-                    </div>
-                    
-                    <div className="sidebar-widget">
-                      <div className="sidebar-widget-box-icon">
-                        <i className="flaticon-pdf" />
-                      </div>
-                      
-                      <div className="sidebar-widget-box-content">
-                        <h3>
-                          Company briefing update of the <br /> 2022 year
-                        </h3>
-                        <Link to="/departmentdetails" className="btn btn-primary">
-                          Download
-                        </Link>
-                      </div>
-                      
-                    </div>
-                    
-                  </div>
-                  
+      <section className="department-details-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-4 col-xl-4">
+              <div className="sidebar">
+                <div className="sidebar-widget-list-inner">
+                  <ul>
+                    <li>
+                      <Link to="/community-partners">
+                        Your Community & Local Partners
+                        <i className="fa-solid fa-arrow-right-long" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/workforce-development">
+                        Jobs & Workforce Development
+                        <i className="fa-solid fa-arrow-right-long" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/innovation">
+                        Innovation & Industry
+                        <i className="fa-solid fa-arrow-right-long" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/infrastructure">
+                        Infrastructure & Housing Access
+                        <i className="fa-solid fa-arrow-right-long" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/culture-community">
+                        Community & Resilience
+                        <i className="fa-solid fa-arrow-right-long" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/safety-law">
+                        Justice, Safety Law
+                        <i className="fa-solid fa-arrow-right-long" />
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                
-                <div className="col-lg-8">
-                  <div className="department-details-imgbox">
-                    <img src={Department01} className="img-fluid" alt="img-159" />
-                    <Link to="#" />
-                    <div className="department-details-img-icon">
-                      <i className="flaticon-police-badge-1" />
-                    </div>
-                  
+
+                <div className="sidebar-widget sidebar-widget-card">
+                  <div className="sidebar-widget-card-icon">
+                    <i className="flaticon-question" />
                   </div>
-                  
-                  <div className="department-details-content-box">
-                    <h4 className="department-details-title">Foundations for Community Well-being
 
-
-
-</h4>
-                    <p>
-                     Our PolyFRAME towers are designed for urban integration, bringing affordable housing close to public transportation, schools, healthcare facilities, and green spaces. We help cities maximize land use and reduce sprawl through innovative design.
-
-
-                    </p>
+                  <div className="sidebar-widget-card-content">
+                    <h3>
+                      <Link to="/contact">Get Any Help?</Link>
+                    </h3>
+                    <p>We’re ready to help — reach out anytime!</p>
                   </div>
-                  
-                  {/* <div className="department-details-box">
+                </div>
+
+                <div className="sidebar-widget">
+                  <div className="sidebar-widget-box-icon">
+                    <i className="flaticon-pdf" />
+                  </div>
+
+                  <div className="sidebar-widget-box-content">
+                    <h3>
+                      Learn more about our Mission, Vision, and the Global Housing Initiative (GHI).
+                    </h3>
+                    <Link to="/departmentdetails" className="btn btn-primary">
+                      About Us
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-8">
+              <div className="department-details-imgbox">
+                <img src={Department01} className="img-fluid" alt="img-159" />
+                <Link to="#" />
+                <div className="department-details-img-icon">
+                  <i className="flaticon-police-badge-1" />
+                </div>
+              </div>
+
+              <div className="department-details-content-box">
+                <h4 className="department-details-title">
+                  Foundations for Community Well-being
+                </h4>
+                <p>
+                  Our PolyFRAME towers are designed for urban integration,
+                  bringing affordable housing close to public transportation,
+                  schools, healthcare facilities, and green spaces. We help
+                  cities maximize land use and reduce sprawl through innovative
+                  design.
+                </p>
+              </div>
+
+              {/* <div className="department-details-box">
                     <div className="department-details-policy">
                       <span>
                         We stand for quality, safety &amp; credibility, so you could be
@@ -151,8 +142,8 @@ function First() {
                       totam rem aperiam, eaque ipsa quae.
                     </p>
                   </div> */}
-                  
-                  {/* <div className="department-details-benefits-inner-box">
+
+              {/* <div className="department-details-benefits-inner-box">
                     <div className="row row-gutter-30">
                       <div className="col-lg-6">
                         <div className="department-details-benefits-box-image">
@@ -193,8 +184,8 @@ function First() {
                     </div>
                     
                   </div> */}
-                  
-                  {/* <div className="department-details-law-box">
+
+              {/* <div className="department-details-law-box">
                     <h4>Europeon Government Law:</h4>
                     <p>
                       Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
@@ -203,8 +194,8 @@ function First() {
                       accusantium totam rem aperiam, eaque ipsa quae.
                     </p>
                   </div> */}
-                 
-                  {/* <div className="department-details-skill-box">
+
+              {/* <div className="department-details-skill-box">
                     <div className="row">
                       <div className="col-12 col-lg-6">
                         <div className="service-one-card">
@@ -253,31 +244,43 @@ function First() {
                     </div>
                     
                   </div> */}
-                  
-                  <div className="accordian-box">
-                      { Drop.map((items, index) => (
-                          <div className={`accordian-box-item ${Faq !== index && "active"}`}  key={items}>
-                              <div className="accordian-title">
-                              <h5>{items.Que}</h5>
-                                <i className="fa-solid fa-angle-right" onClick={ ()=> {setFaq(index)}} />
-                              </div>
 
-                              {Faq === index &&
-                                <div className="accordian-content" key={items} style={{display: "block"}}>
-                                  <p> {items.Answer} </p>
-                                </div>
-                              }
-                          </div>
-                        )) }
+              <div className="accordian-box">
+                {Drop.map((items, index) => (
+                  <div
+                    className={`accordian-box-item ${
+                      Faq !== index && "active"
+                    }`}
+                    key={items}
+                  >
+                    <div className="accordian-title">
+                      <h5>{items.Que}</h5>
+                      <i
+                        className="fa-solid fa-angle-right"
+                        onClick={() => {
+                          setFaq(index);
+                        }}
+                      />
+                    </div>
+
+                    {Faq === index && (
+                      <div
+                        className="accordian-content"
+                        key={items}
+                        style={{ display: "block" }}
+                      >
+                        <p> {items.Answer} </p>
+                      </div>
+                    )}
                   </div>
-                  
-                </div>
-               
+                ))}
               </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default First
+export default First;

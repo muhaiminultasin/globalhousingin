@@ -58,7 +58,7 @@ function Main() {
                         <Link to="/solutions">Our Solutions</Link>
                       </li>
                       <li>
-                        <Link to="/portfolio">Projects</Link>
+                        <Link to="/technology">Our Technology</Link>
                       </li>
                       <li>
                         <Link to="/contact">Contact Us</Link>

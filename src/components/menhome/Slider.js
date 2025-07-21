@@ -90,7 +90,7 @@ function Slider() {
                     <div className="department-card">
                         <div className="department-card-icon">
                         <Link to="/community-partners">
-                            <i className="flaticon-parthenon" />
+                            <i className="flaticon-handshake" />
                         </Link>
                         </div>
                         
@@ -108,7 +108,7 @@ function Slider() {
                     <div className="department-card">
                         <div className="department-card-icon">
                         <Link to="/workforce-development">
-                            <i className="flaticon-suitcase" />
+                            <i className="flaticon-" />
                         </Link>
                         </div>
                         
@@ -126,13 +126,13 @@ function Slider() {
                     <div className="department-card">
                         <div className="department-card-icon">
                         <Link to="/innovation">
-                            <i className="flaticon-industry" />
+                            <i className="flaticon-factory" />
                         </Link>
                         </div>
                         
                         <div className="department-card-content">
                         <h5>
-                            <Link to="/innovation">. Innovation & Industry </Link>
+                            <Link to="/innovation">Innovation & Industry </Link>
                         </h5>
                         </div>
                        
