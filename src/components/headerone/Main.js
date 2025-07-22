@@ -48,8 +48,7 @@ function Main() {
 
                     <div className="topbar-text">
                       <Link to="mailto:contact@globalhousinginitiative.org ">
-                        contact@globalhousinginitiative.org 
-
+                        contact@globalhousinginitiative.org
                       </Link>
                     </div>
                   </li>
@@ -106,6 +105,14 @@ function Main() {
                   </li>
                   <li className=" ">
                     <Link to="/technology">Our Technology</Link>
+                  </li>
+                  <li className="has-dropdown">
+                    <Link to="#">Services</Link>
+                    <ul className="list-unstyled">
+                      <li>
+                        <Link to="/servicedetails">Service Details</Link>
+                      </li>
+                    </ul>
                   </li>
 
                   <li className=" ">
@@ -172,12 +179,7 @@ function Main() {
 
             <div className="logo-box">
               <Link to="/">
-                <img
-                  src={Logo}
-                  width={100}
-                  height={40}
-                  alt={26}
-                />
+                <img src={Logo} width={100} height={40} alt={26} />
               </Link>
             </div>
             {/* mobile nav */}
@@ -195,6 +197,30 @@ function Main() {
                 <li>
                   <Link to="/technology">Our Technology</Link>
                 </li>
+
+                <li className="has-dropdown">
+                  <Link to="#">
+                    Services
+                    <button className={Services ? "expanded" : ""}>
+                      <i
+                        className="fa-solid fa-chevron-right"
+                        onClick={() => {
+                          setServices(!Services);
+                        }}
+                      />
+                    </button>
+                  </Link>
+
+                  {Services && (
+                    <ul className="list-unstyled" style={{ display: "block" }}>
+                      <li>
+                        <Link to="/servicedetails">Service Details</Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+
+                
                 <li>
                   <Link to="/get-involved">Get Involved</Link>
                 </li>
@@ -218,8 +244,10 @@ function Main() {
 
               <li>
                 <i className="fa-solid fa-envelope" />
-                <a href="mailto: contact@globalhousinginitiative.org "> Email Us
-</a>
+                <a href="mailto: contact@globalhousinginitiative.org ">
+                  {" "}
+                  Email Us
+                </a>
               </li>
 
               <li>
@@ -245,7 +273,10 @@ function Main() {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/in/fraidoon-faridnia-082343a0" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/fraidoon-faridnia-082343a0"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-linkedin" />
                 </a>
               </li>
