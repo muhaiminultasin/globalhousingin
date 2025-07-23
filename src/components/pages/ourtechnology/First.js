@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Gallery01 from "../../../assets/image/impact.jpg";
 import Shapes01 from "../../../assets/image/shapes/shape-1.png";
+import { Link } from "react-router-dom";
 
 function First() {
   // Create refs for each section
@@ -31,7 +32,7 @@ function First() {
                 style={{ cursor: "pointer" }}
               >
                 <div className="service-one-icon">
-                  <i className="flaticon-education" />
+                  <Link><i className="flaticon-education" /></Link>
                 </div>
                 <div className="service-one-card-content">
                   <h4>Public-Private Collaboration Engine</h4>
@@ -49,7 +50,7 @@ function First() {
                 style={{ cursor: "pointer" }}
               >
                 <div className="service-one-icon">
-                  <i className="flaticon-charity" />
+                  <Link><i className="flaticon-public-transport-1" /></Link>
                 </div>
                 <div className="service-one-card-content">
                   <h4>Tech-Integrated Manufacturing</h4>
@@ -67,7 +68,7 @@ function First() {
                 style={{ cursor: "pointer" }}
               >
                 <div className="service-one-icon">
-                  <i className="flaticon-donation" />
+                  <Link><i className="flaticon-agriculture" /></Link>
                 </div>
                 <div className="service-one-card-content">
                   <h4>Culture, Community & Resilience</h4>
@@ -85,7 +86,7 @@ function First() {
                 style={{ cursor: "pointer" }}
               >
                 <div className="service-one-icon">
-                  <i className="flaticon-loan" />
+                  <Link><i className="flaticon-businessman" /></Link>
                 </div>
                 <div className="service-one-card-content">
                   <h4>Community Investment System</h4>
@@ -99,11 +100,11 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div
                 className="service-one-card"
-                onClick={() => scrollToSection(urvRef)}
+                onClick={() => scrollToSection(cisRef)}
                 style={{ cursor: "pointer" }}
               >
                 <div className="service-one-icon">
-                  <i className="flaticon-home" />
+                  <Link><i className="flaticon-home" /></Link>
                 </div>
                 <div className="service-one-card-content">
                   <h4>Urban Resilience Villages</h4>
@@ -121,7 +122,7 @@ function First() {
                 style={{ cursor: "pointer" }}
               >
                 <div className="service-one-icon">
-                  <i className="flaticon-care" />
+                  <Link><i className="flaticon-clinic" /></Link>
                 </div>
                 <div className="service-one-card-content">
                   <h4>Rebuilding Lives Program</h4>
@@ -135,72 +136,120 @@ function First() {
         </div>
       </section>
 
-      {/* SECTIONS */}
+      {/* SECTIONS1 */}
       <section ref={ppceRef} className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
               <div className="about-image">
-                <img src={Gallery01} className="img-fluid" alt="Public-Private" />
+                <img
+                  src={Gallery01}
+                  className="img-fluid"
+                  alt="Public-Private"
+                />
               </div>
             </div>
             <div className="col-lg-6">
-              <h2 className="section-title text-white">Public-Private Collaboration Engine</h2>
+              <h2 className="section-title text-white">
+                Public-Private Collaboration Engine
+              </h2>
               <i>Aligning technology with civic needs</i>
               <p>
-                Our development tools are designed to integrate seamlessly with city planning and public infrastructure...
+                Our development tools are designed to integrate seamlessly with city planning and public infrastructure. GHI’s PolyFRAME system enables municipalities and nonprofits to adopt factory-built resilience at scale, simplifying zoning, permitting, and project execution.
               </p>
             </div>
           </div>
         </div>
       </section>
-
-      <section ref={timRef} className="service-section">
+{/* SECTION2 */}
+     <section ref={timRef} className="mayor-section">
         <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-lg-5">
-              <img src={Gallery01} className="img-fluid" alt="Tech-Integrated" />
-            </div>
+          <div className="row">
             <div className="col-lg-6">
-              <h2 className="section-title text-white">Tech-Integrated Manufacturing</h2>
-              <i>Factory-built for efficiency and resilience</i>
-              <p>
-                Our PolyFRAME system leverages automation and modular design to reduce costs...
-              </p>
+              <div className="mayor-box">
+                <div className="section-title-box">
+                  <div className="section-tagline">Training-Integrated Manufacturing
+</div>
+                  <h1 className="">
+                    Bridging workforce development with advanced fabrication
+
+                  </h1>
+                  <p>
+                    Our facilities double as training centers, where workers learn to fabricate and assemble PolyFRAME components using CNC press brakes, robotic cutting, and pre-engineered assembly logic. Each step creates jobs and builds community capacity.
+
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="mayor-img">
+                <img src={Shapes01} className="floated-image-one" alt="img-7" />
+                <img src={Gallery01} alt="img-8" />
+                
+              </div>
             </div>
           </div>
         </div>
       </section>
-
+{/* SECTION3 */}
       <section ref={carRef} className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
-              <img src={Gallery01} className="img-fluid" alt="Culture and Resilience" />
+              <img
+                src={Gallery01}
+                className="img-fluid"
+                alt="Culture and Resilience"
+              />
             </div>
             <div className="col-lg-6">
-              <h2 className="section-title text-white">Culture, Community & Resilience</h2>
-              <i>Rebuilding lives, one home at a time</i>
+              <h2 className="section-title text-white">
+               Disaster-Resilient Structural System
+
+              </h2>
+              <i>Stronger buildings through steel–concrete composite innovation
+</i>
               <p>
-                We believe culture and community are the foundation of recovery...
+                PolyFRAME columns and beams are built using a multi-layered steel core embedded in reinforced concrete. This patent-pending system resists fire, seismic, flood, and high-wind hazards, offering long-term safety for communities facing climate extremes.
+
               </p>
             </div>
+
+            
           </div>
         </div>
       </section>
-
-      <section ref={cisRef} className="service-section">
+{/* SECTION4 */}
+      <section ref={cisRef} className="mayor-section">
         <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-lg-5">
-              <img src={Gallery01} className="img-fluid" alt="Community Investment" />
-            </div>
+          <div className="row">
             <div className="col-lg-6">
-              <h2 className="section-title text-white">Community Investment System</h2>
-              <i>Affordable financing, circular value</i>
-              <p>
-                GHI’s financing system allows for zero-interest lending, promoting inclusive ownership...
-              </p>
+              <div className="mayor-box">
+                <div className="section-title-box">
+                  <div className="section-tagline"> Smart Modular Design & Deployment
+
+</div>
+                  <h1 className="">
+                    
+Precision-built systems for any location
+                  </h1>
+                  <p>
+                  From 4-story towers to urban infill sites, our modules are engineered to fit diverse land use constraints. By combining octagonal, square, and hexagonal units, we eliminate the need for custom structural engineering, making scalable design accessible.
+
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="mayor-img">
+                <img src={Shapes01} className="floated-image-one" alt="img-7" />
+                <img src={Gallery01} alt="img-8" />
+                
+              </div>
             </div>
           </div>
         </div>
@@ -213,28 +262,44 @@ function First() {
               <img src={Gallery01} className="img-fluid" alt="Urban Villages" />
             </div>
             <div className="col-lg-6">
-              <h2 className="section-title text-white">Urban Resilience Villages</h2>
-              <i>Permanent housing as a human right</i>
+              <h2 className="section-title text-white">
+                Integrated Urban Village Model
+              </h2>
+              <i>Technology meets culture, care, and inclusion.
+</i>
               <p>
-                URVs are permanent, affordable communities built with trauma-informed design and green technology...
+                Each Urban Village combines PolyFRAME’s structural core with inclusive site design: shared green space, community services, and wellness-focused infrastructure. Our technology enables not just buildings, but whole ecosystems of equity and opportunity.
+
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section ref={rlpRef} className="service-section">
+      <section ref={rlpRef} className="mayor-section">
         <div className="container">
-          <div className="row justify-content-between">
-            <div className="col-lg-5">
-              <img src={Gallery01} className="img-fluid" alt="Rebuilding Lives" />
-            </div>
+          <div className="row">
             <div className="col-lg-6">
-              <h2 className="section-title text-white">Rebuilding Lives Program</h2>
-              <i>Empowering through shelter and support</i>
-              <p>
-                This program combines housing with job training, peer support, and wraparound services for sustained recovery...
-              </p>
+              <div className="mayor-box">
+                <div className="section-title-box">
+                  <div className="section-tagline">Embedded Safety & Monitoring Systems</div>
+                  <h1 className="">
+                    Innovations that protect from within
+                  </h1>
+                  <p>
+                    Our structural columns include built-in misting for wildfire defense, water drainage for flood control, and seismic isolation at the column base. GHI’s systems are more than structural—they’re proactive safety tools for the future of housing.
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="mayor-img">
+                <img src={Shapes01} className="floated-image-one" alt="img-7" />
+                <img src={Gallery01} alt="img-8" />
+                
+              </div>
             </div>
           </div>
         </div>

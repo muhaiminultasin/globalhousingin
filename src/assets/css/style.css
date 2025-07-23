@@ -68,7 +68,9 @@
 /***********************
 * Common
 ***********************/
-
+.white{
+	background-color: white !important;
+}
 
 
 body{
