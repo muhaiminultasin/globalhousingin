@@ -31,7 +31,7 @@ import Polyframebuildingsystem from '../components/pages/polyframebuildingsystem
 import Sustainablevillages from '../components/pages/sustainablevillages/Main'
 import Citygovernment from '../components/pages/citygovernment/Main'
 import Missionstatement from '../components/pages/missionstatement/Main'
-import Getinvolved from '../components/pages/getinvolved/Main'
+import Getinvolved from '../components/pages/getinvolve/Main'
 import Blog1 from "../components/pages/singleblogs/Blog1/blog1"
 import Blog2 from "../components/pages/singleblogs/Blog2/blog2"
 import Blog3 from "../components/pages/singleblogs/Blog3/blog3"

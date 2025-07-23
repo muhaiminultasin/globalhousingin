@@ -1,76 +1,107 @@
 import React from "react";
-import Portfolio01 from "../../../assets/image/portfolio/portfolio-1.jpg";
-import Portfolio02 from "../../../assets/image/portfolio/portfolio-2.jpg";
-import Portfolio03 from "../../../assets/image/portfolio/portfolio-3.jpg";
-import Portfolio04 from "../../../assets/image/portfolio/portfolio-4.jpg";
-import Portfolio05 from "../../../assets/image/portfolio/portfolio-5.jpg";
-import Portfolio06 from "../../../assets/image/portfolio/portfolio-6.jpg";
-import Portfolio07 from "../../../assets/image/portfolio/portfolio-7.jpg";
-import Portfolio08 from "../../../assets/image/portfolio/portfolio-8.jpg";
-import Portfolio09 from "../../../assets/image/portfolio/portfolio-9.jpg";
+import { Link } from "react-router-dom";
 
 function First() {
   return (
     <>
-      <div className="support-section">
+      <section className="service-one-section">
         <div className="container">
           <div className="row row-gutter-30">
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio09} className="img-fluid" alt="img-97" />
+            <div className="col-lg-6 col-xl-4">
+              <div className="service-one-card">
+                <div className="service-one-icon">
+                  <i className="flaticon-education" />
+                </div>
+
+                <div className="service-one-card-content">
+                  <h4>Public-Private Collaboration Engine</h4>
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio08} className="img-fluid" alt="img-98" />
+            <div className="col-lg-6 col-xl-4">
+              <div className="service-one-card">
+                <div className="service-one-icon">
+                  <i className="flaticon-public-transport-1" />
+                </div>
+
+                <div className="service-one-card-content">
+                  <h4>Tech-Integrated Manufacturing</h4>
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio07} className="img-fluid" alt="img-99" />
+            <div className="col-lg-6 col-xl-4">
+              <div className="service-one-card">
+                <div className="service-one-icon">
+                  <i className="flaticon-agriculture" />
+                </div>
+
+                <div className="service-one-card-content">
+                  <h4>Culture, Community & Resilience</h4>
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio06} className="img-fluid" alt="img-100" />
+            <div className="col-lg-6 col-xl-4">
+              <div className="service-one-card">
+                <div className="service-one-icon">
+                  <i className="flaticon-factory" />
+                </div>
+
+                <div className="service-one-card-content">
+                  <h4>Community Investment System</h4>
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio05} className="img-fluid" alt="img-101" />
+            <div className="col-lg-6 col-xl-4">
+              <div className="service-one-card">
+                <div className="service-one-icon">
+                  <i className="flaticon-businessman" />
+                </div>
+
+                <div className="service-one-card-content">
+                  <h4>Urban Resilience Villages</h4>
+                </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio03} className="img-fluid" alt="img-102" />
-              </div>
-            </div>
+            <div className="col-lg-6 col-xl-4">
+              <div className="service-one-card">
+                <div className="service-one-icon">
+                  <i className="flaticon-clinic" />
+                </div>
 
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio01} className="img-fluid" alt="img-103" />
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio02} className="img-fluid" alt="img-104" />
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-4">
-              <div className="support-card">
-                <img src={Portfolio04} className="img-fluid" alt="img-105" />
+                <div className="service-one-card-content">
+                  <h4>Rebuilding Lives Program</h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="cta-three">
+        <div className="cta-three-inner">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="cta-three-content text-center">
+                  <h2 className="section-title text-white">
+                    City Goverment Offers a Wide <br />
+                    Range of Online Services
+                  </h2>
+                  <Link to="/servicedetails" className="btn btn-primary">
+                    {" "}
+                    Discover More{" "}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
