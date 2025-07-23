@@ -49,6 +49,10 @@
 
 /* for submenu items text */
 
+.privacy-policy{
+	padding:50px;
+}
+
 .hide{
   display:none;
 }

@@ -15,7 +15,7 @@ function Intro() {
                     <div className="about-image">
                     <div className="about-image-inner img-one">
                         <img src={Gallery01} className="img-fluid" alt="img-2" />
-                        <div className="sign-text">Kevin Martin</div>
+                        <div className="sign-text">GHI</div>
                         
                         <div className="about-image-caption">
                         <div className="about-image-caption-inner">

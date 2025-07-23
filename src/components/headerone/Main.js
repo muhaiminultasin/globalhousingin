@@ -103,20 +103,30 @@ function Main() {
                   <li className=" ">
                     <Link to="/solutions">Our Solutions</Link>
                   </li>
-                  <li className=" ">
-                    <Link to="/technology">Our Technology</Link>
-                  </li>
+
                   <li className="has-dropdown">
-                    <Link to="#">Services</Link>
+                    <Link to="#">Our Solutions</Link>
                     <ul className="list-unstyled">
                       <li>
-                        <Link to="/servicedetails">Service Details</Link>
+                        <Link to="/servicedetails">Service</Link>
                       </li>
                     </ul>
                   </li>
-
-                  <li className=" ">
-                    <Link to="/get-involved">Get Involved</Link>
+                  <li className="has-dropdown">
+                    <Link to="#">Our Technology</Link>
+                    <ul className="list-unstyled">
+                      <li>
+                        <Link to="/servicedetails">Service</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="has-dropdown">
+                    <Link to="#">Get Involved</Link>
+                    <ul className="list-unstyled">
+                      <li>
+                        <Link to="/servicedetails">Service</Link>
+                      </li>
+                    </ul>
                   </li>
 
                   <li className="">
@@ -191,39 +201,71 @@ function Main() {
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
-                <li>
-                  <Link to="/solutions">Our Solutions</Link>
-                </li>
-                <li>
-                  <Link to="/technology">Our Technology</Link>
-                </li>
 
                 <li className="has-dropdown">
                   <Link to="#">
-                    Services
-                    <button className={Services ? "expanded" : ""}>
+                    Our Solutions
+                    <button className={News ? "expanded" : ""}>
                       <i
                         className="fa-solid fa-chevron-right"
                         onClick={() => {
-                          setServices(!Services);
+                          setNews(!News);
                         }}
                       />
                     </button>
                   </Link>
 
-                  {Services && (
+                  {News && (
                     <ul className="list-unstyled" style={{ display: "block" }}>
                       <li>
                         <Link to="/services">Services</Link>
                       </li>
+                    </ul>
+                  )}
+                </li>
+                <li className="has-dropdown">
+                  <Link to="#">
+                    Our Technology
+                    <button className={Events ? "expanded" : ""}>
+                      <i
+                        className="fa-solid fa-chevron-right"
+                        onClick={() => {
+                          setEvents(!Events);
+                        }}
+                      />
+                    </button>
+                  </Link>
+
+                  {Events && (
+                    <ul className="list-unstyled" style={{ display: "block" }}>
                       <li>
-                        <Link to="/servicedetails">Service Details</Link>
+                        <Link to="/services">Services</Link>
+                      </li>
+                    </ul>
+                  )}
+                </li>
+                <li className="has-dropdown">
+                  <Link to="#">
+                    Get Involved
+                    <button className={Support ? "expanded" : ""}>
+                      <i
+                        className="fa-solid fa-chevron-right"
+                        onClick={() => {
+                          setSupport(!Support);
+                        }}
+                      />
+                    </button>
+                  </Link>
+
+                  {Support && (
+                    <ul className="list-unstyled" style={{ display: "block" }}>
+                      <li>
+                        <Link to="/services">Services</Link>
                       </li>
                     </ul>
                   )}
                 </li>
 
-                
                 <li>
                   <Link to="/get-involved">Get Involved</Link>
                 </li>

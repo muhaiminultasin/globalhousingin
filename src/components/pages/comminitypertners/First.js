@@ -1,7 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
-import Department01 from '../../../assets/image/department/department-1.jpg'
-import Department02 from '../../../assets/image/department/department-2.jpg'
+import Department01 from '../../../assets/image/department/dep-1.jpg'
 
 
 function First() {
@@ -128,128 +127,7 @@ function First() {
                     </p>
                   </div>
                   
-                  {/* <div className="department-details-box">
-                    <div className="department-details-policy">
-                      <span>
-                        We stand for quality, safety &amp; credibility, so you could be
-                        trust us fully about private jet charters and our working process.
-                      </span>
-                     
-                    </div>
-                   
-                    <p>
-                      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-                      suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
-                      autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-                      nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                      voluptas nulla pariatur iste natus error sit voluptatem accusantium
-                      totam rem aperiam, eaque ipsa quae.
-                    </p>
-                  </div> */}
-                  
-                  {/* <div className="department-details-benefits-inner-box">
-                    <div className="row row-gutter-30">
-                      <div className="col-lg-6">
-                        <div className="department-details-benefits-box-image">
-                          <img src={Department02} className="img-fluid" alt={160} />
-                        </div>
-                        
-                      </div>
-                      
-                      <div className="col-lg-6">
-                        <div className="department-details-benefits-box">
-                          <h3>Our Benefits</h3>
-                          <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum.
-                          </p>
-                          <ul className="list-unstyled list-style">
-                            <li>
-                              <i className="fa-solid fa-circle-arrow-right" />
-                              <h5>Praesent efficitur quam sit amet</h5>
-                            </li>
-                            
-                            <li>
-                              <i className="fa-solid fa-circle-arrow-right" />
-                              <h5>Nunc cursus dolor id purus euismod</h5>
-                            </li>
-                            
-                            <li>
-                              <i className="fa-solid fa-circle-arrow-right" />
-                              <h5>Quisque tincidunt eros ac place viverra</h5>
-                            </li>
-                            
-                          </ul>
-                          
-                        </div>
-                        
-                      </div>
-                      
-                    </div>
-                    
-                  </div> */}
-                  
-                  {/* <div className="department-details-law-box">
-                    <h4>Europeon Government Law:</h4>
-                    <p>
-                      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                      quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
-                      quo voluptas nulla pariatur iste natus error sit voluptatem
-                      accusantium totam rem aperiam, eaque ipsa quae.
-                    </p>
-                  </div> */}
-                 
-                  {/* <div className="department-details-skill-box">
-                    <div className="row">
-                      <div className="col-12 col-lg-6">
-                        <div className="service-one-card">
-                          <div className="service-one-icon">
-                            <Link to="#">
-                              <i className="flaticon-education" />
-                            </Link>
-                          </div>
-                          
-                          <div className="service-one-card-content">
-                            <h4>
-                              <Link to="/servicedetails">Education &amp; Skills</Link>
-                            </h4>
-                            <p>
-                              When nothing prevents our being able to we like best every.
-                            </p>
-                          </div>
-                          
-                        </div>
-                       
-                      </div>
-                     
-                      <div className="col-12 col-lg-6">
-                        <div className="service-one-card">
-                          <div className="service-one-icon">
-                            <Link to="#">
-                              <i className="flaticon-public-transport-1" />
-                            </Link>
-                          </div>
-                          
-                          <div className="service-one-card-content">
-                            <h4>
-                              <Link to="/servicedetails">
-                                Roads &amp; Transportation
-                              </Link>
-                            </h4>
-                            <p>
-                              When nothing prevents our being able to we like best every.
-                            </p>
-                          </div>
-                          
-                        </div>
-                       
-                      </div>
-                      
-                    </div>
-                    
-                  </div> */}
-                  
-                 
+          
                 </div>
                
               </div>

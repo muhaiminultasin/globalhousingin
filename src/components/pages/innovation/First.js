@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Department01 from "../../../assets/image/department/department-1.jpg";
-import Department02 from "../../../assets/image/department/department-2.jpg";
+import Department01 from "../../../assets/image/department/dep-2.jpg";
 
 function First() {
   const [Faq, setFaq] = useState(0);

@@ -44,7 +44,7 @@ function Mayor() {
               <div className="mayor-img">
                 <img src={Shapes01} className="floated-image-one" alt="img-7" />
                 <img src={Gallery01} alt="img-8" />
-                <div className="mayor-name">Mr. Kevin Martin</div>
+                <div className="mayor-name">Housing Initiative</div>
               </div>
             </div>
           </div>

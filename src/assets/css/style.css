@@ -68,10 +68,9 @@
 /***********************
 * Common
 ***********************/
-.white{
-	background-color: white !important;
+.privacy-policy{
+	padding:50px;
 }
-
 
 body{
 	font-family: var(--thm-font);
