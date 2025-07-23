@@ -1,10 +1,12 @@
-import React, { useRef } from "react";
+import React, {  useRef, useEffect } from "react";
 import Gallery01 from "../../../assets/image/impact.jpg";
 import Shapes01 from "../../../assets/image/shapes/shape-1.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function First() {
-  // Create refs for each section
+
+  const location = useLocation();
+
   const ppceRef = useRef(null);
   const timRef = useRef(null);
   const carRef = useRef(null);
@@ -12,13 +14,34 @@ function First() {
   const urvRef = useRef(null);
   const rlpRef = useRef(null);
 
-  // Smooth scroll function
+  // 👉 this ensures scroll on hash load
+  useEffect(() => {
+    const hash = location.hash.replace("#", "");
+
+    const scrollTo = {
+      ppce: ppceRef,
+      tim: timRef,
+      car: carRef,
+      cis: cisRef,
+      urv: urvRef,
+      rlp: rlpRef,
+    };
+
+    const targetRef = scrollTo[hash];
+
+    if (targetRef && targetRef.current) {
+      setTimeout(() => {
+        targetRef.current.scrollIntoView({ behavior: "smooth" });
+      }, 100); // wait till DOM is ready
+    }
+  }, [location]);
+
+  // 👉 used for onClick scrolling within same page
   const scrollToSection = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
-
   return (
     <>
       {/* BOXES */}
@@ -137,7 +160,7 @@ function First() {
       </section>
 
       {/* SECTIONS1 */}
-      <section ref={ppceRef} className="service-section">
+      <section ref={ppceRef} id="ppce" className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
@@ -162,7 +185,7 @@ function First() {
         </div>
       </section>
 {/* SECTION2 */}
-     <section ref={timRef} className="mayor-section">
+     <section ref={timRef} id="tim" className="mayor-section">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -194,7 +217,7 @@ function First() {
         </div>
       </section>
 {/* SECTION3 */}
-      <section ref={carRef} className="service-section">
+      <section ref={carRef} id="car" className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
@@ -222,7 +245,7 @@ function First() {
         </div>
       </section>
 {/* SECTION4 */}
-      <section ref={cisRef} className="mayor-section">
+      <section ref={cisRef} id="cis" className="mayor-section">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -255,7 +278,7 @@ Precision-built systems for any location
         </div>
       </section>
 
-      <section ref={urvRef} className="service-section">
+      <section ref={urvRef} id="urv" className="service-section">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5">
@@ -276,7 +299,7 @@ Precision-built systems for any location
         </div>
       </section>
 
-      <section ref={rlpRef} className="mayor-section">
+      <section ref={rlpRef}  id="rlp" className="mayor-section">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
