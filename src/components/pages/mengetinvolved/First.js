@@ -89,12 +89,11 @@ function First() {
               <div className="col-lg-12">
                 <div className="cta-three-content text-center">
                   <h2 className="section-title text-white">
-                    City Goverment Offers a Wide <br />
-                    Range of Online Services
+                    Stay Connected and Learn More About the Global Housing Initiative
                   </h2>
-                  <Link to="/servicedetails" className="btn btn-primary">
+                  <Link to="/about" className="btn btn-primary">
                     {" "}
-                    Discover More{" "}
+                    Get Involved{" "}
                   </Link>
                 </div>
               </div>

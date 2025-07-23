@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import Header from '../../headerone/Main'
 import Bredcom from '../../Bredcom/Main'
 import First from '../mengetinvolved/First'
-import Mayor from '../../menhome/Mayor'
-import Second from '../mengetinvolved/Second'
+import Mayor from '../mengetinvolved/Mayor'
+// import Second from '../mengetinvolved/Second'
+import Client from '../../menhome/Client'
 
 function Main() {
 
@@ -23,7 +24,7 @@ function Main() {
            />
             <First/>
             <Mayor/>
-            <Second/>
+            <Client/>
         </div>
     </>
   )

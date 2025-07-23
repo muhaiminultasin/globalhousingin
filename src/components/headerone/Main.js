@@ -214,6 +214,9 @@ function Main() {
                   {Services && (
                     <ul className="list-unstyled" style={{ display: "block" }}>
                       <li>
+                        <Link to="/services">Services</Link>
+                      </li>
+                      <li>
                         <Link to="/servicedetails">Service Details</Link>
                       </li>
                     </ul>
