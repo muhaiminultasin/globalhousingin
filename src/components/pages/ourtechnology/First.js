@@ -59,9 +59,7 @@ function First() {
                 </div>
                 <div className="service-one-card-content">
                   <h4>Public-Private Collaboration Engine</h4>
-                  <p>
-                    <i>Aligning technology with civic needs</i>
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -77,9 +75,7 @@ function First() {
                 </div>
                 <div className="service-one-card-content">
                   <h4>Tech-Integrated Manufacturing</h4>
-                  <p>
-                    <i>Factory-built for efficiency and resilience</i>
-                  </p>
+                
                 </div>
               </div>
             </div>
@@ -95,9 +91,7 @@ function First() {
                 </div>
                 <div className="service-one-card-content">
                   <h4>Culture, Community & Resilience</h4>
-                  <p>
-                    <i>Rebuilding lives, one home at a time</i>
-                  </p>
+                 
                 </div>
               </div>
             </div>
@@ -113,9 +107,7 @@ function First() {
                 </div>
                 <div className="service-one-card-content">
                   <h4>Community Investment System</h4>
-                  <p>
-                    <i>Affordable financing, circular value</i>
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -131,9 +123,7 @@ function First() {
                 </div>
                 <div className="service-one-card-content">
                   <h4>Urban Resilience Villages</h4>
-                  <p>
-                    <i>Permanent housing as a human right</i>
-                  </p>
+                  
                 </div>
               </div>
             </div>
@@ -149,9 +139,7 @@ function First() {
                 </div>
                 <div className="service-one-card-content">
                   <h4>Rebuilding Lives Program</h4>
-                  <p>
-                    <i>Empowering through shelter and support</i>
-                  </p>
+                  
                 </div>
               </div>
             </div>
