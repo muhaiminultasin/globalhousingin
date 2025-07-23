@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Shapes01 from "../../../assets/image/shapes/shape-1.png";
-import Gallery01 from "../../../assets/image/housing.jpg";
+import Gallery01 from "../../../assets/image/architecture.jpg";
 
 function Mayor() {
   return (

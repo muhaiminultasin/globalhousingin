@@ -10,7 +10,7 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <i className="flaticon-education" />
+                 <Link> <i className="flaticon-education" /></Link>
                 </div>
 
                 <div className="service-one-card-content">
@@ -22,7 +22,7 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <i className="flaticon-public-transport-1" />
+                 <Link> <i className="flaticon-public-transport-1" /></Link>
                 </div>
 
                 <div className="service-one-card-content">
@@ -34,7 +34,7 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <i className="flaticon-agriculture" />
+                  <Link><i className="flaticon-agriculture" /></Link>
                 </div>
 
                 <div className="service-one-card-content">
@@ -46,7 +46,7 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <i className="flaticon-factory" />
+                  <Link><i className="flaticon-factory" /></Link>
                 </div>
 
                 <div className="service-one-card-content">
@@ -58,7 +58,7 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <i className="flaticon-businessman" />
+                  <Link><i className="flaticon-businessman" /></Link>
                 </div>
 
                 <div className="service-one-card-content">
@@ -70,7 +70,7 @@ function First() {
             <div className="col-lg-6 col-xl-4">
               <div className="service-one-card">
                 <div className="service-one-icon">
-                  <i className="flaticon-clinic" />
+                  <Link><i className="flaticon-clinic" /></Link>
                 </div>
 
                 <div className="service-one-card-content">
@@ -93,7 +93,7 @@ function First() {
                   </h2>
                   <Link to="/about" className="btn btn-primary">
                     {" "}
-                    Get Involved{" "}
+                    About{" "}
                   </Link>
                 </div>
               </div>
