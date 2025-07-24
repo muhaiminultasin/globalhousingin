@@ -100,12 +100,10 @@ function Main() {
                     <Link to="/about">About Us</Link>
                   </li>
 
-                  <li className=" ">
-                    <Link to="/solutions">Our Solutions</Link>
-                  </li>
+               
 
                   <li className="has-dropdown">
-                    <Link to="#">Our Solutions</Link>
+                    <Link to="/solutions">Our Solutions</Link>
                     <ul className="list-unstyled">
                       <li>
                         <Link to="/servicedetails">Service</Link>
@@ -113,7 +111,7 @@ function Main() {
                     </ul>
                   </li>
                   <li className="has-dropdown">
-                    <Link to="#">Our Technology</Link>
+                    <Link to="/technology">Our Technology</Link>
                     <ul className="list-unstyled">
                       <li>
                         <Link to="/servicedetails">Service</Link>
@@ -121,7 +119,7 @@ function Main() {
                     </ul>
                   </li>
                   <li className="has-dropdown">
-                    <Link to="#">Get Involved</Link>
+                    <Link to="/get-involved">Get Involved</Link>
                     <ul className="list-unstyled">
                       <li>
                         <Link to="/servicedetails">Service</Link>
@@ -203,7 +201,7 @@ function Main() {
                 </li>
 
                 <li className="has-dropdown">
-                  <Link to="#">
+                  <Link to="/solutions">
                     Our Solutions
                     <button className={News ? "expanded" : ""}>
                       <i
@@ -224,7 +222,7 @@ function Main() {
                   )}
                 </li>
                 <li className="has-dropdown">
-                  <Link to="#">
+                  <Link to="/technology">
                     Our Technology
                     <button className={Events ? "expanded" : ""}>
                       <i
@@ -245,7 +243,7 @@ function Main() {
                   )}
                 </li>
                 <li className="has-dropdown">
-                  <Link to="#">
+                  <Link to="/get-involved">
                     Get Involved
                     <button className={Support ? "expanded" : ""}>
                       <i
@@ -266,9 +264,7 @@ function Main() {
                   )}
                 </li>
 
-                <li>
-                  <Link to="/get-involved">Get Involved</Link>
-                </li>
+                
                 <li>
                   <Link to="/contact">Contact</Link>
                 </li>
